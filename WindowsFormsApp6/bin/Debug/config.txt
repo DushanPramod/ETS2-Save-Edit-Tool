@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sii_decryptorPath>SII_Decrypt.exe</sii_decryptorPath>
+  <isSetMaxSpeed>true</isSetMaxSpeed>
+  <isSetCruiseSpeed>true</isSetCruiseSpeed>
+  <isSetTBNotOpen>true</isSetTBNotOpen>
+  <isSetTBOn>true</isSetTBOn>
+  <dataUpdateDelay>50</dataUpdateDelay>
+  <max_speed>181</max_speed>
+  <cruise_speed>180</cruise_speed>
+  <max_speed_sound>1000</max_speed_sound>
+  <cruise_speed_sound>1000</cruise_speed_sound>
+  <tb_client_sound>1000</tb_client_sound>
+</Config>

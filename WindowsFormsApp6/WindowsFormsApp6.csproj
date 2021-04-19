@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{215F4B78-6246-4D16-816C-6D0F08B4CE20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp6</RootNamespace>
+    <AssemblyName>WindowsFormsApp6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>256x256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="GemBox.Email, Version=15.0.0.1029, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\packages\GemBox.Email.15.0.1029\lib\net35\GemBox.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\Desktop\VS\Virtual_speditor\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mail">
+      <HintPath>..\..\..\..\Downloads\Compressed\Mail\Examples\Lib\Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advance.Designer.cs">
+      <DependentUpon>Advance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Bank.cs" />
+    <Compile Include="Classes\BusJobLog.cs" />
+    <Compile Include="Classes\BusStop.cs" />
+    <Compile Include="Classes\Company.cs" />
+    <Compile Include="Classes\DeliveryLog.cs" />
+    <Compile Include="Classes\DeliveryLogEntry.cs" />
+    <Compile Include="Classes\DriverAi.cs" />
+    <Compile Include="Classes\DriverPlayer.cs" />
+    <Compile Include="Classes\Economy.cs" />
+    <Compile Include="Classes\EconomyEvent.cs" />
+    <Compile Include="Classes\EconomyEventQueue.cs" />
+    <Compile Include="Classes\GameProgress.cs" />
+    <Compile Include="Classes\Garage.cs" />
+    <Compile Include="Classes\JobInfo.cs" />
+    <Compile Include="Classes\JobOfferData.cs" />
+    <Compile Include="Classes\MailCtrl.cs" />
+    <Compile Include="Classes\MailDef.cs" />
+    <Compile Include="Classes\MapAction.cs" />
+    <Compile Include="Classes\Other.cs" />
+    <Compile Include="Classes\OversizeOffer.cs" />
+    <Compile Include="Classes\OversizeOfferCtrl.cs" />
+    <Compile Include="Classes\OversizeRouteOffers.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\PoliceCtrl.cs" />
+    <Compile Include="Classes\ProfitLog.cs" />
+    <Compile Include="Classes\ProfitLogEntry.cs" />
+    <Compile Include="Classes\Registryy.cs" />
+    <Compile Include="Classes\SuperClass.cs" />
+    <Compile Include="Classes\Trailer.cs" />
+    <Compile Include="Classes\TrailerDef.cs" />
+    <Compile Include="Classes\TrailerUtilizationLog.cs" />
+    <Compile Include="Classes\TransportData.cs" />
+    <Compile Include="Classes\Vehicle.cs" />
+    <Compile Include="Classes\VehicleAccessory.cs" />
+    <Compile Include="Classes\VehicleAddonAccessory.cs" />
+    <Compile Include="Classes\VehiclePaintJobAccessory.cs" />
+    <Compile Include="Classes\VehicleWheelAccessory.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Data\Ets2TelemetryData.cs" />
+    <Compile Include="Data\Ets2TelemetryDataReader.cs" />
+    <Compile Include="Data\IEts2TelemetryData.cs" />
+    <Compile Include="Data\Reader\Ets2TelemetryStructure.cs" />
+    <Compile Include="Data\Reader\SharedProcessMemory.cs" />
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpDataClasses\Encryptor.cs" />
+    <Compile Include="HelpDataClasses\MapDictionary.cs" />
+    <Compile Include="HelpDataClasses\OptinHide.cs" />
+    <Compile Include="HelpDataClasses\Placement.cs" />
+    <Compile Include="HelpDataClasses\TruckDetail.cs" />
+    <Compile Include="Helpers\SiiDecoder.cs" />
+    <Compile Include="Helpers\TruckBookProcessHelper.cs" />
+    <Compile Include="Helpers\Ets2ProcessHelper.cs" />
+    <Compile Include="Helpers\Win32Uac.cs" />
+    <Compile Include="JSON\VehicleAccessoryJson.cs" />
+    <Compile Include="JSON\VehicleAddonAccessoryJson.cs" />
+    <Compile Include="JSON\VehicleJson.cs" />
+    <Compile Include="JSON\VehiclePaintJobAccessoryJson.cs" />
+    <Compile Include="JSON\VehicleWheelAccessoryJson.cs" />
+    <Compile Include="Method.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterWindow.Designer.cs">
+      <DependentUpon>RegisterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruckAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruckAcc.Designer.cs">
+      <DependentUpon>TruckAcc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Advance.resx">
+      <DependentUpon>Advance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterWindow.resx">
+      <DependentUpon>RegisterWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruckAcc.resx">
+      <DependentUpon>TruckAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="256x256.ico" />
+    <Content Include="90235012_1590047137813487_1406081578706141184_n.ico" />
+    <Content Include="euro_truck_simulator_2___icon_by_blagoicons_da107l6-fullview.ico" />
+    <None Include="Resources\90235012_1590047137813487_1406081578706141184_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
